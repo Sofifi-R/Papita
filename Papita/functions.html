@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historial médico, Alerta Paw, Mapa Pet, calendario inteligente y más en Pet Nova.">
+    <title>Functions | Pet Nova</title>
+    <link rel="icon" href="img/a.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/functions.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="index.html" class="brand"><img class="brand-logo" src="img/logo.jpg" alt="Pet Nova" width="962" height="458"></a>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="functions.html" aria-current="page">Functions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li class="nav-cursor" aria-hidden="true"></li>
+            </ul>
+        </nav>
+
+        <a href="https://nova-p-git-main-pet-nova.vercel.app/" class="login-btn" target="_blank" rel="noopener">Log In</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="page-hero">
+            <h1>Everything your pet needs, in one single place</h1>
+            <p>Pet Nova is the app that helps you care for, connect, and celebrate every moment with your best friend.</p>
+            <div class="hero-buttons">
+                <a href="https://nova-p-git-main-pet-nova.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener">Explore the features</a>
+            </div>
+        </section>
+
+        <!-- Estadísticas (se animan con js/functions.js) -->
+        <section class="stats" aria-label="Pet Nova en cifras">
+            <div class="stat"><strong data-count="5000" data-suffix="+">5,000+</strong><span>Pets registered</span></div>
+            <div class="stat"><strong data-count="12000" data-suffix="+">12,000+</strong><span>Active users</span></div>
+            <div class="stat"><strong data-count="300" data-suffix="+">300+</strong><span>Vets listed</span></div>
+            <div class="stat"><strong data-count="98" data-suffix="%">98%</strong><span>Pets found</span></div>
+        </section>
+
+        <!-- Pet Map -->
+        <section id="pet-map" class="split">
+            <div>
+                <h2>Little paws on the road</h2>
+                <p>Explore an interactive map with the best places for your pet. Find veterinarians, parks, hotels, shops, and other pet-friendly spaces based on your current location right now.</p>
+                <ul class="place-list">
+                    <li class="place-card"><span class="place-icon" aria-hidden="true">&#128205;</span>Knino Veterinary Clinic</li>
+                    <li class="place-card"><span class="place-icon" aria-hidden="true">&#128205;</span>Vet Medical Veterinary Care Center</li>
+                    <li class="place-card"><span class="place-icon" aria-hidden="true">&#128205;</span>Happy Pets Veterinary Clinic Center</li>
+                </ul>
+            </div>
+            <img src="https://static.wixstatic.com/media/50cddc_c4d21591e8a046c68bef704e4d6250c3~mv2.webp/v1/crop/x_126,y_62,w_1057,h_674/fill/w_803,h_512,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gemini_Generated_Image_p2rnytp2rnytp2rn.webp" alt="Pantalla del Mapa Pet" width="803" height="512" loading="lazy" onerror="this.onerror=null;this.src='img/home.jpg'">
+        </section>
+
+        <!-- Perfil médico -->
+        <section id="medical" class="split split--reverse section-lavender">
+            <div>
+                <h2>Medical Profile Info</h2>
+                <p class="lead">All their medical information, always organized for you.</p>
+                <ul class="chips">
+                    <li class="chip">Vaccines</li>
+                    <li class="chip">Allergies</li>
+                    <li class="chip">Medication Records</li>
+                    <li class="chip">Medical History Logs</li>
+                    <li class="chip">Important Notes</li>
+                </ul>
+                <p>Keep your pet health history always within reach. Check vaccines, allergies, treatments, medications, and medical records in one single place whenever you need them.</p>
+            </div>
+            <img src="https://static.wixstatic.com/media/fa0bcc99a6db89f23698e356db6d1c66.png/v1/fill/w_600,h_531,al_c,q_85,enc_auto/Primer%20plano%20de%20la%20cara%20del%20perro.png" alt="Primer plano de la cara de un perro" width="600" height="531" loading="lazy" onerror="this.onerror=null;this.src='img/home.jpg'">
+        </section>
+
+        <!-- Paw Alert -->
+        <section id="paw-alert" class="split">
+            <div>
+                <h2>Paw Alert</h2>
+                <p>Report and find lost pets with help from the community. Share alerts in real-time and increase the chances of a safe reunion for everyone involved.</p>
+            </div>
+            <div class="alert-demo" role="img" aria-label="Ejemplo de alerta de mascota perdida">
+                <span class="alert-dot" aria-hidden="true"></span>
+                <div>
+                    <strong>Paw Alert</strong>
+                    <p>New lost pet alert reported near your area</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendario -->
+        <section id="calendar" class="features">
+            <h2>Smart Care Calendar</h2>
+            <p class="section-sub">Organize every care detail without worrying about forgetting an important date. Receive reminders for vaccines, vet visits, medications, and other essential pet events.</p>
+            <div class="calendar-grid">
+                <article class="event-card"><span class="event-icon" aria-hidden="true">&#128704;</span><h3>Bath Day</h3><p class="event-date">May 17th</p><p>10:00 AM</p></article>
+                <article class="event-card"><span class="event-icon" aria-hidden="true">&#128137;</span><h3>Vaccine</h3><p class="event-date">July 30th</p><p>5:00 PM</p></article>
+                <article class="event-card"><span class="event-icon" aria-hidden="true">&#129657;</span><h3>Vet Appointment</h3><p class="event-date">June 23rd</p><p>2:00 PM</p></article>
+            </div>
+        </section>
+
+        <!-- Pet Moments -->
+        <section id="moments" class="moments">
+            <h2>Pet Moments</h2>
+            <p class="lead">Every adventure deserves to be remembered. Save photos, create a digital album, and relive the most special moments together with your loyal life companion right here.</p>
+            <div class="gallery">
+                <img src="https://static.wixstatic.com/media/a0e660e8fcc34399bdb48bb6a022131a.jpg/v1/fill/w_980,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/H%C3%A1mster%20en%20rueda.jpg" alt="Hámster en una rueda" loading="lazy" width="400" height="500" onerror="this.onerror=null;this.src='img/home.jpg'">
+                <img src="https://static.wixstatic.com/media/11062b_986da450976c4f598e1519f5748d7316~mv2.jpg/v1/fill/w_980,h_1388,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Perro%20Criando%20Pata.jpg" alt="Perro levantando la pata" loading="lazy" width="400" height="500" onerror="this.onerror=null;this.src='img/home.jpg'">
+                <img src="https://static.wixstatic.com/media/67241091f26e4d22a65ed2a054b0803d.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gato%20con%20pajarita.jpg" alt="Gato con pajarita" loading="lazy" width="400" height="500" onerror="this.onerror=null;this.src='img/home.jpg'">
+                <img src="https://static.wixstatic.com/media/2ae04a3a21be4939bcf7dc3b8353981d.jpg/v1/fill/w_980,h_1470,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Perros%20felices%20juntos.jpg" alt="Perros felices juntos" loading="lazy" width="400" height="500" onerror="this.onerror=null;this.src='img/home.jpg'">
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="cta">
+            <h2>We care for what you love</h2>
+            <p>Everything your pet needs, in one place. Because every walk, every appointment, every memory, and every important moment deserves to be right at your fingertips.</p>
+            <a href="https://nova-p-git-main-pet-nova.vercel.app/" class="btn btn-yellow" target="_blank" rel="noopener">Get started</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-info">
+            <a href="index.html" class="brand">&#128062; Pet Nova</a>
+            <p>La Chorrera, Panamá Oeste, Panamá</p>
+            <p>123-456-7890<br>petnovitas2027@gmail.com</p>
+        </div>
+        <ul class="social">
+            <li><a href="http://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="http://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="http://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+        <div class="footer-legal">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <p>&copy; 2026 PetNova by PetNovitasTeam</p>
+        </div>
+    </footer>
+
+    <script src="js/functions.js"></script>
+
+</body>
+</html>
